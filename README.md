@@ -13,7 +13,11 @@ Download the latest release version [here](https://github.com/DCTewi/Md5Checker/
 pyinstaller -F -w -i static/icon.ico -n md5checker app.py
 ```
 
-and the build will be in `./dist/md5checker(.exe)`
+and the build will be in `./dist/md5checker(.exe)`. Or just python it!(If you have python env):
+
+```
+python app.py
+```
 
 ## License
 
