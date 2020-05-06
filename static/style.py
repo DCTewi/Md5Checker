@@ -1,3 +1,7 @@
+"""
+Raw QSS
+"""
+
 stylesheets = """
 QWidget {
     color: #222;

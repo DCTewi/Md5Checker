@@ -10,7 +10,7 @@ A simple md5 checker gui app in PyQt5
 Download the latest release version [here](https://github.com/DCTewi/Md5Checker/releases). Or clone the repo and build in shell:
 
 ```
-pyinstaller -F -w -i icon.ico -n md5checker app.py
+pyinstaller -F -w -i static/icon.ico -n md5checker app.py
 ```
 
 and the build will be in `./dist/md5checker(.exe)`

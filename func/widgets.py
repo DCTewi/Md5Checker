@@ -4,9 +4,13 @@ Tool Widget
 
 # coding=utf-8
 
-import utils
 import base64
-import logo
+import func.utils
+import static.logo
+from PyQt5.QtGui import (
+    QIcon,
+    QPixmap,
+)
 from PyQt5.QtWidgets import (
     QMainWindow,
     QWidget,
@@ -16,10 +20,6 @@ from PyQt5.QtWidgets import (
     QLineEdit,
     QPlainTextEdit,
     QLabel,
-)
-from PyQt5.QtGui import (
-    QIcon,
-    QPixmap,
 )
 
 
@@ -66,14 +66,14 @@ class MainWindow(QMainWindow):
         widget.setLayout(grid)
         self.setCentralWidget(widget)
 
-        rawimg = base64.b64decode(logo.icon)
+        rawimg = base64.b64decode(static.logo.icon)
         pix = QPixmap()
         pix.loadFromData(rawimg)
         icon = QIcon()
         icon.addPixmap(pix, QIcon.Normal, QIcon.Off)
         self.setWindowIcon(icon)
         self.setWindowTitle('md5checker')
-        
+
         self.statusBar().showMessage('Ready')
 
     def drop_rename(self):
