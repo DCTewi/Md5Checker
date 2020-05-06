@@ -93,7 +93,7 @@ class MainWindow(QMainWindow):
     def sum_md5(self):
         res = ''
         try:
-            res = utils.get_sum_md5(self.path_edit.toPlainText())
+            res = func.utils.get_sum_md5(self.path_edit.toPlainText())
             self.raw_md5 = self.raw_edit.text()
             if self.raw_md5 != '':
                 if self.raw_md5 == res:
